@@ -44,3 +44,19 @@ h2 {
     line-height: 22px;
     border-bottom: 2px solid #eee;
 }
+
+/*contant*/
+
+.column {
+    float: right;
+    width: 25%;
+    background-color: red;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
