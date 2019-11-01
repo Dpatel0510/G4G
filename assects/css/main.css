@@ -1,23 +1,26 @@
 /*sytle for video */
-
-.full-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+* {
+    box-sizing: border-box;
 }
 
-.myVideo {
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+
+#myVideo {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* footer */
@@ -34,6 +37,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    opacity: .5;
 
 }
 
@@ -46,17 +50,6 @@ h2 {
 }
 
 /*contant*/
-
-.column {
-    float: right;
-    width: 25%;
-    background-color: red;
-    text-align: center;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.container-fluid {
+    margin-top: 30%;
 }
